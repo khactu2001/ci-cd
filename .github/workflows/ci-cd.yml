@@ -71,9 +71,9 @@ jobs:
 
       - name: Copy AAB to Output Directory
         run: |
-          # mkdir -p $GITHUB_WORKSPACE/output
           ls
           echo "github workspace ${{ github.workspace }}"
           ls -R ${{ github.workspace }}
+          # mkdir -p $GITHUB_WORKSPACE/output
           # cp ${{ github.workspace }}/app-release/*.apk $GITHUB_WORKSPACE/output/
           # cp ${{ github.workspace }}/app-release/*.apk $GITHUB_WORKSPACE/output/
