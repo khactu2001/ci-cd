@@ -70,4 +70,4 @@ jobs:
       - name: Copy AAB to Output Directory
         run: |
           mkdir -p $GITHUB_WORKSPACE/output
-          cp ${{ github.workspace }}/app-release/*.aab $GITHUB_WORKSPACE/output/
+          cp ${{ github.workspace }}/app-release/*.apk $GITHUB_WORKSPACE/output/
