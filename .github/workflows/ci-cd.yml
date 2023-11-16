@@ -51,11 +51,11 @@ jobs:
       #   # env:
       #   #   CI: true
 
-      # - name: Save APK as Artifact
-      #   uses: actions/upload-artifact@v2
-      #   with:
-      #     name: app-release
-      #     path: android/app/build/outputs/apk/release/app-release.apk
+      - name: Save APK as Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: app-release
+          path: android/app/build/outputs/apk/release/app-release.apk
 
   download:
     runs-on: ubuntu-latest
