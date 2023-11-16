@@ -51,21 +51,21 @@ jobs:
       #   # env:
       #   #   CI: true
 
-      - name: Save APK as Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: app-release
-          path: android/app/build/outputs/apk/release/app-release.apk
+      # - name: Save APK as Artifact
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: app-release
+      #     path: android/app/build/outputs/apk/release/app-release.apk
 
   download:
     runs-on: ubuntu-latest
     needs: build
 
     steps:
-      - name: Download AAB
-        uses: actions/download-artifact@v2
-        with:
-          name: app-release
+      # - name: Download AAB
+      #   uses: actions/download-artifact@v2
+      #   with:
+      #     name: app-release
 
       - name: Copy AAB to Output Directory
         run: |
