@@ -73,6 +73,6 @@ jobs:
           ls
           echo "github workspace ${{ github.workspace }}"
           ls -R ${{ github.workspace }}
-          # mkdir -p $GITHUB_WORKSPACE/output
+          mkdir -p $GITHUB_WORKSPACE/output
           cp ${{ github.workspace }}/app-release.apk $GITHUB_WORKSPACE/output/
           # cp ${{ github.workspace }}/app-release.apk $GITHUB_WORKSPACE/output/
