@@ -17,6 +17,8 @@ jobs:
       #   with:
       #     node-version: '20'
       #     # working-directory:
+      - name: List all items
+        run: ls
 
       - name: Install Dependencies
         run: yarn -i
